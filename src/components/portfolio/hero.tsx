@@ -38,6 +38,7 @@ export function Hero() {
       ref={ref}
       className="relative min-h-[100svh] flex flex-col overflow-hidden pb-12 md:pb-16"
       aria-labelledby="hero-headline"
+      
     >
       {/* Decorative top metadata strip — anchors the page identity */}
       <div className="container-wide pt-28 md:pt-32">
@@ -84,7 +85,6 @@ export function Hero() {
               transition={{ ...transition, delay: 0.45 }}
               className="mt-6 max-w-xl text-base md:text-lg text-ink-soft leading-relaxed"
             >
-              I engineer data pipelines, backend systems, and cloud-native platforms that power reliable analytics and AI.
             </motion.p>
 
             <motion.div
@@ -141,7 +141,7 @@ export function Hero() {
                 aria-label="Scroll to Selected Work section"
               >
                 <span className="font-mono-label text-[10px] uppercase tracking-[0.2em] whitespace-nowrap">
-                  View selected work
+                  View Projects
                 </span>
                 <span aria-hidden className="transition-transform duration-300 group-hover:translate-y-0.5">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">

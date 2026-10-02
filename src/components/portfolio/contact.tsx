@@ -88,7 +88,7 @@ export function Contact() {
                   <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-ink" />
                 </span>
                 <span className="font-mono-label text-[10px] uppercase tracking-[0.22em]">
-                  {profile.availabilityNote}
+                  {profile.availability}
                 </span>
               </div>
             </div>
@@ -121,7 +121,7 @@ export function Contact() {
                 {profile.socials.map((s) => (
                   <li key={s.label}>
                     <a
-                      href={s.href}
+                      href={s.label === "Resume" ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${s.href}` : s.href}
                       target={s.href.startsWith("http") ? "_blank" : undefined}
                       rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
                       className="group inline-flex items-baseline gap-2"
@@ -143,14 +143,6 @@ export function Contact() {
               <p className="eyebrow-parens">Reach</p>
               <dl className="flex flex-col gap-2">
                 <div className="flex flex-col">
-                  <dt className="font-mono-label text-[9px] uppercase tracking-[0.22em] text-ink-mute mb-0.5">Phone</dt>
-                  <dd className="text-base text-ink">
-                    <a href={`tel:${profile.phone.replace(/[^\d+]/g, "")}`} className="link-editorial">
-                      {profile.phone}
-                    </a>
-                  </dd>
-                </div>
-                <div className="flex flex-col mt-2">
                   <dt className="font-mono-label text-[9px] uppercase tracking-[0.22em] text-ink-mute mb-0.5">Location</dt>
                   <dd className="text-base text-ink">{profile.location}</dd>
                 </div>

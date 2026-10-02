@@ -127,7 +127,6 @@ export default function RootLayout({
               image: `${siteUrl}/og-image.png`,
               jobTitle: "Data Engineer",
               email: "mailto:bhavanasathavane@gmail.com",
-              telephone: "+1 (657) 751-9230",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Fullerton",

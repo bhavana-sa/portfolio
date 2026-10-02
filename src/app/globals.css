@@ -285,9 +285,6 @@
 .marquee-track[data-direction="reverse"] {
   animation-direction: reverse;
 }
-.marquee-track[data-paused="true"] {
-  animation-play-state: paused;
-}
 
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {

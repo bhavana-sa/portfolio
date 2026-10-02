@@ -270,12 +270,6 @@ export function SiteNav() {
                   {profile.email}
                 </a>
                 <a
-                  href={`tel:${profile.phone.replace(/[^\d+]/g, "")}`}
-                  className="link-editorial text-ink"
-                >
-                  {profile.phone}
-                </a>
-                <a
                   href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/resume.pdf`}
                   className="link-editorial text-ink"
                 >

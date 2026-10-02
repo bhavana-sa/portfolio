@@ -22,7 +22,7 @@ Work Log:
   - About — manifesto with serif drop cap, 4-metric stat band, 3 principle pillars
   - Projects — desktop split layout with left index rail + animated case study panel (problem/approach/outcome triptych); mobile accordion fallback
   - Experience — vertical timeline with measurable impact bullets, numeric highlighting, current-role pill
-  - Expertise — 2x2 discipline grid with hover-lift cards
+  - Skils — 2x2 discipline grid with hover-lift cards
   - Education — paired credentials spread
   - Contact — large editorial CTA, direct email visible, contact grid, socials, closing signature
 - Implemented reusable primitives: Reveal (scroll-triggered fade), Stagger/StaggerItem (orchestrated reveals), SectionLabel (numbered editorial header)
@@ -30,7 +30,7 @@ Work Log:
 - Accessibility: semantic HTML throughout, ARIA labels, keyboard-focusable elements, prefers-reduced-motion respected in all animation hooks, visible focus-visible rings, sr-only labels for stats
 - Used VLM (z-ai vision) to evaluate the design across multiple iterations:
   - Initial hero rated 8.5/10 — addressed redundant tech stack listing, button weight, accent contrast
-  - Section-by-section critique addressed: drop cap alignment, sidebar active state, A/B/C label prominence, experience date alignment, expertise numbering noise, contact button balance
+  - Section-by-section critique addressed: drop cap alignment, sidebar active state, A/B/C label prominence, experience date alignment, skils numbering noise, contact button balance
   - Final full-page evaluation: 8.5/10, "agency-quality work", "design-minded builder"
 - Verified responsive design at 390px mobile, 1440px desktop
 - Verified dark mode renders as a deliberate premium palette (warm charcoal, not pure black)
@@ -64,7 +64,7 @@ Work Log:
   - Colors: --paper #F9F9F8, --surface #FFFFFF, --ink #1A1A18, --ink-2 #5C5C58, --ink-3 #8F8F89, --line rgba(0,0,0,0.08), --accent #2D3028
   - Fonts: Cormorant Garamond (serif display), Outfit (sans body), JetBrains Mono (mono labels)
   - Marquee keyframe: @keyframes scroll { 0% { translateX(0) } 100% { translateX(-100%) } } with linear infinite
-- Analyzed 10 user-provided screenshots via VLM to confirm visual treatment (parens-wrapped labels, italic accent words, pill tags, em-dash bullets, ✦ diamond separators, dark expertise section)
+- Analyzed 10 user-provided screenshots via VLM to confirm visual treatment (parens-wrapped labels, italic accent words, pill tags, em-dash bullets, ✦ diamond separators, dark skils section)
 - Rewrote globals.css with new token system:
   - Cool paper palette (#F9F9F8 light / #111 dark) replacing warm cream
   - Monochromatic accent (#2D3028 charcoal-olive) replacing terracotta
@@ -86,7 +86,7 @@ Work Log:
 - Redesigned About: massive serif numerals as graphic anchors (clamp 5rem), italic accent on first word of each principle, hairline rules between principles
 - Redesigned Projects: alternating split layout (image-left/right), abstract line-art SVG illustrations (4 variants: network graph, converging lines, schema diagram, concentric rings), big metric in serif, pill tags with rule-strong border
 - Redesigned Experience: 2-col grid with company on left + dates below, em-dash prefixed bullets with numeric highlighting, pill tags
-- Redesigned Expertise: bg-paper-sunken dark section, 2-col card grid with rounded-xl corners, numbered top-right indicator, hairline-divided skill list
+- Redesigned Skils: bg-paper-sunken dark section, 2-col card grid with rounded-xl corners, numbered top-right indicator, hairline-divided skill list
 - Redesigned Education: matching card grid with rounded corners and numbered top-right
 - Redesigned Contact: huge italic serif watermark headline (clamp up to 7rem), 3-col info grid (Details / Elsewhere / Reach), back-to-top link
 - Updated nav: black circular "b" logo, uppercase tracked name "BHAVANA ATHAVANE", pill résumé button with mono-label typography
@@ -103,7 +103,7 @@ Stage Summary:
   - src/app/layout.tsx — Cormorant + Outfit + JetBrains font swap
   - src/components/portfolio/marquee.tsx — NEW scrolling skills banner
   - src/components/portfolio/primitives.tsx — parens-style SectionLabel
-  - All 7 section components redesigned: hero, about, projects, experience, expertise, education, contact
+  - All 7 section components redesigned: hero, about, projects, experience, skils, education, contact
   - src/app/page.tsx — Marquee inserted between Hero and About
 - QA screenshots saved to /home/z/my-project/download/qa/
 

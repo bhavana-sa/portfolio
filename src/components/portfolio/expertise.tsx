@@ -5,14 +5,14 @@ import { Reveal, SectionLabel, Stagger, StaggerItem } from "./primitives";
 import { skillGroups } from "@/lib/portfolio-data";
 
 /* ============================================================
-   Expertise — dark section with 2x2 card grid.
+  Skils — dark section with 2x2 card grid.
    Mirrors engineer-showcase: switches to deep charcoal
    background for visual rhythm. Each card has a small
    numbered indicator in the top-right corner, large serif
    category title, and a clean list of skills.
    ============================================================ */
 
-export function Expertise() {
+export function Skils() {
   return (
     <section
       id="expertise"

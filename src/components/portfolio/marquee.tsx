@@ -24,7 +24,6 @@ export function Marquee({
   className = "",
 }: MarqueeProps) {
   const reduced = useReducedMotion();
-  const [paused, setPaused] = React.useState(false);
 
   return (
     <div id="stack" className={["w-full bg-paper text-ink border-y border-rule scroll-mt-20", className].join(" ")}>
@@ -49,8 +48,6 @@ export function Marquee({
       {/* Marquee Banner Track */}
       <div
         className="relative w-full overflow-hidden py-8 md:py-12"
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
         aria-label="Technical stack"
         role="list"
       >
@@ -63,7 +60,6 @@ export function Marquee({
               } as React.CSSProperties
             }
             data-direction={direction}
-            data-paused={paused}
           >
             <MarqueeGroup items={items} />
             <MarqueeGroup items={items} ariaHidden />

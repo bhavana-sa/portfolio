@@ -100,13 +100,9 @@ export function Projects() {
       <div className="container-editorial mb-10 md:mb-14">
         <Reveal>
           <SectionLabel
-            index="04"
+            index="03"
             eyebrow="Selected Work"
-            title={
-              <>
-                Engineering that solves problems.
-              </>
-            }
+            title={ <> A selection of <br className="hidden sm:block" />things I've built. </> }
           />
         </Reveal>
 
@@ -114,7 +110,7 @@ export function Projects() {
             <div className="mt-8 flex flex-col gap-6">
             <div className="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
               <p className="max-w-lg text-base md:text-lg text-ink-soft leading-relaxed">
-                Built to solve real problems. Data pipelines, distributed backends, and applied machine learning — explore the problem, approach, and outcome behind each build.
+                Projects across data, machine learning, backend systems, and full-stack development—each one shaped by a different problem, constraint, or idea I wanted to explore.
               </p>
 
               {/* Arrow controls */}

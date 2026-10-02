@@ -17,6 +17,7 @@ export function Education() {
       className="relative scroll-mt-20 py-24 md:py-36 border-t border-rule"
       aria-labelledby="education-heading"
     >
+
       <div className="container-editorial">
         <Reveal>
           <SectionLabel
@@ -24,8 +25,9 @@ export function Education() {
             eyebrow="Education"
             title={
               <>
-                Two degrees, two
-                <br className="hidden sm:block" />perspectives
+                Foundations in
+                <br className="hidden sm:block" /> Computer{" "}
+                <span className="italic font-normal text-ink-soft">Science</span>.
               </>
             }
           />
@@ -33,9 +35,10 @@ export function Education() {
 
         <Reveal delay={0.1}>
           <p className="mt-8 max-w-2xl text-base md:text-lg text-ink-soft leading-relaxed">
-            Formal CS training in India and the U.S.: a Bachelor in Bangalore
-            and an MS at CSU Fullerton, paired with hands-on data engineering
-            and teaching experience.
+            My computer science foundation began in Bangalore, India with a bachelor’s
+            degree focused on software and systems, and continued at California
+            State University, Fullerton, where I pursued a Master's in Computer Science
+            with deeper exposure to data, analytics, and applied AI.
           </p>
         </Reveal>
 

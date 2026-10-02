@@ -32,18 +32,12 @@ export function Experience() {
                 eyebrow="Experience"
                 title={
                   <>
-                    Early-career experience shipping
+                    Experience building software and analyzing
                     <br className="hidden sm:block" /> data at{" "}
                     <span className="italic font-normal text-ink-soft">scale</span>.
                   </>
                 }
               />
-            </div>
-            <div className="md:col-span-4 md:text-right">
-              <p className="text-sm text-ink-soft leading-relaxed max-w-sm md:ml-auto">
-                Nokia · Cognizant · CSU Fullerton — co-op, full-time, and
-                teaching experience across pipelines, databases, and analytics.
-              </p>
             </div>
           </div>
         </Reveal>
@@ -95,9 +89,10 @@ function CompanyCard({
           <p className="mt-2 md:mt-3 ml-9 md:ml-10 text-[14.5px] text-ink-soft leading-relaxed max-w-2xl">
             {entry.summary}
           </p>
-          <p className="mt-4 ml-9 md:ml-10 text-sm text-ink-mute">
-            Tap the card to show more information.
+          <p className="mt-4 ml-9 md:ml-10 text-sm italic text-ink-light"> 
+            Tap the card to show more information. 
           </p>
+
         </div>
 
         {/* Right column — period, location, kind badge */}

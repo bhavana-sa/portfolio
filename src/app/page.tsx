@@ -4,7 +4,7 @@ import { Marquee } from "@/components/portfolio/marquee";
 import { About } from "@/components/portfolio/about";
 import { Projects } from "@/components/portfolio/projects";
 import { Experience } from "@/components/portfolio/experience";
-import { Expertise } from "@/components/portfolio/expertise";
+import { Skils } from "@/components/portfolio/expertise";
 import { Education } from "@/components/portfolio/education";
 import { Contact } from "@/components/portfolio/contact";
 import { profile } from "@/lib/portfolio-data";
@@ -39,12 +39,12 @@ export default function Home() {
         <Marquee
           items={marqueeItems}
           stats={profile.stats}
-          duration={85}
+          duration={80}
         />
         <About />
         <Experience />
         <Projects />
-        <Expertise />
+        <Skils />
         <Education />
         <Contact />
       </main>
