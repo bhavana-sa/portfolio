@@ -24,7 +24,6 @@ export const profile = {
   seniority:    "entry-level",
   focusAreas:   ["AI", "Cloud Computing", "Fintech", "Telecom"],
   socials: [
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/bhavana-athavane", handle: "bhavana-athavane" },
     { label: "GitHub", href: "https://github.com/bhavana-sa", handle: "bhavana-sa" },
     { label: "Resume", href: "/resume.pdf", handle: "Download PDF" },
   ],

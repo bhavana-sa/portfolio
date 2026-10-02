@@ -41,14 +41,14 @@ export function Hero() {
       
     >
       {/* Decorative top metadata strip — anchors the page identity */}
-      <div className="container-wide pt-28 md:pt-32">
+      <div className="container-wide pt-24 md:pt-28">
         <motion.div
           initial={reduced ? false : { opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           className="flex flex-wrap items-center justify-between gap-3 text-ink-mute"
         >
-          <div className="flex items-center gap-2.5 translate-y-8 md:translate-y-10">
+          <div className="flex items-center gap-2.5">
             <span className="relative flex h-2 w-2" aria-hidden>
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-600" />
@@ -73,7 +73,7 @@ export function Hero() {
               initial={reduced ? false : { opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...transition, delay: 0.25 }}
-              className="font-display font-medium text-ink leading-[0.96] tracking-[-0.035em] text-[clamp(2.75rem,7vw,6.5rem)]"
+              className="mt-3 font-display font-medium text-ink leading-[0.96] tracking-[-0.035em] text-[clamp(2.75rem,7vw,6.5rem)]"
             >
               <span className="block">Hi, I&apos;m <span className="italic font-normal text-ink-soft">Bhavana</span></span>
               <span className="block text-ink">a Data, Backend & AI Engineer</span>
@@ -93,22 +93,6 @@ export function Hero() {
               transition={{ ...transition, delay: 0.6 }}
               className="mt-8 flex flex-wrap items-center gap-3.5 md:gap-4"
             >
-              {/* LinkedIn action button */}
-              <a
-                href={profile.socials.find((s) => s.label === "LinkedIn")?.href || "https://www.linkedin.com/in/bhavana-athavane"}
-                target="_blank"
-                rel="noreferrer"
-                className="group inline-flex items-center justify-center gap-2.5 h-11 rounded-full border border-rule-strong bg-paper-raised text-ink px-6 transition-all duration-300 hover:border-ink hover:bg-ink hover:text-paper shadow-[0_6px_18px_-14px_rgba(0,0,0,0.28)] dark:shadow-[0_6px_18px_-14px_rgba(0,0,0,0.8)]"
-                aria-label="View my LinkedIn profile"
-              >
-                <svg width="14" height="14" viewBox="0 0 448 512" fill="currentColor" aria-hidden>
-                  <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341.5a53.86 53.86 0 1153.86-53.86 53.87 53.87 0 01-53.86 53.86zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.25-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.7V148.9h89V196h1.3c12.4-23.3 42.6-47.8 87.7-47.8 93.8 0 111.1 61.8 111.1 142.3V448z" />
-                </svg>
-                <span className="font-mono-label text-[10px] uppercase tracking-[0.2em] whitespace-nowrap">
-                  LinkedIn
-                </span>
-              </a>
-
               {/* GitHub action button */}
               <a
                 href={profile.socials.find((s) => s.label === "GitHub")?.href || "https://github.com/Bhavanasa1902"}
