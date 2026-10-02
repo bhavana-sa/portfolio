@@ -1,23 +1,21 @@
 /**
  * Portfolio content for Bhavana Sudhakar Athavane — Data Engineer
- * Extracted and refined from the source portfolio.
- * Wording improved for editorial clarity while preserving all factual information.
  */
 
 export const profile = {
   name: "Bhavana Sudhakar Athavane",
-  firstName: "Bhavana",
+  firstName: "Bhavana Sudhakar",
   lastName: "Athavane",
-  role: "Data Engineer",
+  role: "Data / SoftwareEngineer",
   // Single line positioning statement used across hero / meta / footer
   positioning:
-    "I build scalable pipelines, cloud data platforms, and ML-ready infrastructure that let analytics and AI operations move with confidence.",
+    "I build reliable data pipelines, cloud platforms, and AI-powered systems designed to scale from raw data to production.",
   // Long-form manifesto used in About
   manifesto: [
-    "I build the systems that let AI and data scale — from backend to cloud.",
-    "I focus on engineering reliable backend systems, cloud-native architecture, and ML-ready data pipelines that teams can build on with confidence.",
-    "My work spans database engineering, REST API design, cloud platform integration, and applied machine learning — with a focus on measurable outcomes: lower latency, cleaner interfaces, and systems that hold up under real usage.",
-    "Through platform engineering and database co-ops, I've built fault-diagnostic pipelines on Google Cloud, integrating platform monitoring data with ticketing and asset-management systems through REST APIs, and worked on Python-based backend integrations across Oracle, MySQL, and PostgreSQL. In enterprise systems roles, I've contributed to database performance work and automated ETL workflows in Python. As a Graduate Teaching Associate at CSUF, I run labs and office hours in SQL and business analytics, helping students turn ambiguous business questions into structured, queryable analysis.",
+    "I’ve always been drawn to the part of engineering that sits between a messy problem and a system people can actually depend on. I enjoy taking something ambiguous, understanding how the pieces fit together, and turning it into something structured, useful, and maintainable.",
+    "That instinct has shaped how I’ve approached every stage of my work—from enterprise platforms and data systems to AI-driven applications. I care about the details that are easy to overlook: whether a system is understandable six months later, whether an interface makes sense to the person using it, whether a pipeline fails gracefully, and whether the solution actually solves the problem it was built for.",
+    "Working across industry and academia has also taught me that good engineering is rarely about choosing the most complicated solution. It is about asking better questions, learning quickly, communicating clearly, and knowing when simplicity is the better design decision.",
+    "I’m still early in my career, but that is the part I want to keep with me as the systems get bigger and the problems get harder: build with curiosity, be deliberate with complexity, and leave things better than I found them.",
   ],
   location: "Fullerton, California, USA",
   email: "bhavanasathavane@gmail.com",
@@ -377,7 +375,6 @@ export const projects: ProjectEntry[] = [
 
 export type Skill = {
   label: string;
-  value: number;
 };
 
 export type SkillGroup = {
@@ -388,52 +385,52 @@ export type SkillGroup = {
 };
 
 export const skillGroups: SkillGroup[] = [
-  {
+{
     id: "programming",
-    title: "Programming & Query",
-    caption: "Languages I reach for first",
+    title: "Programming & Data Engineering",
+    caption: "Programming languages and data development",
     skills: [
-      { label: "SQL / PL/SQL / Query Optimization", value: 92 },
-      { label: "Python", value: 88 },
-      { label: "ETL / ELT Pipeline Development", value: 82 },
-      { label: "Database Design & Normalization", value: 80 },
-      { label: "Java / JavaScript", value: 58 },
+      { label: "Python" },
+      { label: "SQL / PL/SQL / Query Optimization" },
+      { label: "ETL / ELT Pipeline Development" },
+      { label: "Data Modeling & Transformation" },
+      { label: "Java / JavaScript" },
     ],
   },
   {
     id: "databases",
-    title: "Databases & Warehousing",
-    caption: "Where the data lives",
+    title: "Databases",
+    caption: "Storage, modeling, and querying",
     skills: [
-      { label: "PostgreSQL / MySQL", value: 82 },
-      { label: "Oracle DB / SQL Server", value: 78 },
-      { label: "BigQuery / Redshift", value: 76 },
-      { label: "Data Warehousing Architecture", value: 74 },
-      { label: "Stored Procedures & Triggers", value: 80 },
+      { label: "PostgreSQL / MySQL" },
+      { label: "Oracle DB / SQL Server" },
+      { label: "BigQuery / Amazon Redshift" },
+      { label: "Database Design & Normalization" },
+      { label: "Data Warehousing Architecture" },
     ],
   },
   {
     id: "cloud-ai",
     title: "Cloud & AI",
-    caption: "Platform and intelligence layer",
+    caption: "Cloud platforms and intelligent systems",
     skills: [
-      { label: "Google Cloud Platform (GCP)", value: 88 },
-      { label: "Vertex AI / ML Pipelines", value: 80 },
-      { label: "BigQuery ML / Analytics", value: 78 },
-      { label: "LLM Integration & Semantic Search", value: 74 },
-      { label: "NLP & Text Analytics", value: 72 },
+      { label: "Google Cloud Platform (GCP)" },
+      { label: "Vertex AI / ML Pipelines" },
+      { label: "LLM Integration & Semantic Search" },
+      { label: "NLP & Text Analytics" },
+      { label: "BigQuery ML / Analytics" },
     ],
   },
   {
     id: "tools-devops",
-    title: "Tools & DevOps",
-    caption: "How work ships",
+    title: "Engineering & Analytics",
+    caption: "Development, deployment, and analysis",
     skills: [
-      { label: "Git / Version Control", value: 90 },
-      { label: "Tableau / Data Visualization", value: 80 },
-      { label: "REST APIs / Microservices", value: 72 },
-      { label: "Docker / Kubernetes", value: 60 },
-      { label: "Jira / CI-CD Pipelines", value: 56 },
+      { label: "REST APIs / Microservices" },
+      { label: "Git / Version Control" },
+      { label: "Docker / Kubernetes" },
+      { label: "CI/CD & Development Workflows" },
+      { label: "Tableau / Data Visualization" },
     ],
   },
 ];
@@ -456,7 +453,6 @@ export const education: EducationEntry[] = [
     field: "Computer Science",
     location: "Fullerton, CA, USA",
     period: "2024 — May 2026",
-    current: true,
   },
   {
     id: "jyothy",
